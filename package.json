@@ -1,0 +1,22 @@
+{
+  "name": "3wa-projet-rework",
+  "version": "1.0.0",
+  "description": "my website for 3wa academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realbenben/3wa-reworked.git"
+  },
+  "author": "realbenben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realbenben/3wa-reworked/issues"
+  },
+  "homepage": "https://github.com/realbenben/3wa-reworked#readme",
+  "dependencies": {
+    "sass": "^1.32.13"
+  }
+}
