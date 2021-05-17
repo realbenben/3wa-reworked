@@ -1,0 +1,810 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@500;700;900&display=swap");
+@import "../../node_modules/normalize.css/normalize.css";
+:root {
+  /*colors*/
+  --color-yellow: #fff5c0;
+  --color-yellow-strong: #ffee93;
+  --color-pink: #ff8585;
+  --color-pink-light: #ffb396;
+  --color-red:#ff4646;
+  --color-primary:#ff4646;
+  --color-black:#222831;
+  --color-white:#fafafa;
+  /*spacing*/
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 16px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --space-7: 128px;
+  /* Breakpoints */
+  --xlarge: 1680px;
+  --large: 1280px;
+  --medium: 980px;
+  --small: 740px;
+  --xsmall: 480px;
+  /* Fonts */
+  --font-cursive: "Italianno", cursive;
+  --font-sans-serif: "Montserrat", sans-serif;
+  --font-serif: Georgia, Times, serif;
+  --font-mono: Menlo, Courier, monospace;
+  --font-italic: 100;
+  --font-normal: 500;
+  --font-bold: 700;
+  --font-heavy: 900;
+}
+
+.navbar-label {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.navbar-link {
+  color: var(--color-black);
+}
+
+.fas {
+  float: left;
+}
+
+@media screen and (max-width: 420px) {
+  .navbar-label {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    margin: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--space-2);
+  }
+
+  .navbar-link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*ICI SE TROUVE LE CSS DE MISE EN PLACE DES PAGES /HERE FIND THE LAYOUT DISPLAY */
+/*############################################about.php*/
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*#################################card.php*/
+.flex-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.food, .drink {
+  text-align: center;
+}
+
+.carte {
+  margin-top: -6%;
+}
+
+.animation-title {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*#############################Contact*/
+.map {
+  height: 400px;
+  width: 400px;
+}
+
+.map-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact {
+  border: 2px solid black;
+  background-color: var(--color-yellow-strong);
+  width: 50%;
+  border-radius: 1em;
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.contact > h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.title {
+  padding: 30px 0px 30px 0px;
+}
+
+/*#############################################################takeAway.php*/
+.food-product, .drink-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.label {
+  padding-right: var(--space-4);
+}
+
+/*###########################*/
+.main-content {
+  text-align: center;
+}
+
+.formspree {
+  width: 70%;
+  height: auto;
+}
+
+/*couleur des pages/img #######################################################*/
+body {
+  background-color: #fff5c0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header > div {
+  flex: 1;
+}
+
+.header-logo {
+  max-width: var(--space-7);
+  max-height: var(--space-7);
+}
+
+.header-title {
+  font-family: var(--font-cursive);
+  color: var(--color-black);
+  font-size: var(--space-6);
+  font-weight: var(--font-bold);
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.footer {
+  padding: var(--space-6);
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    text-align: center;
+  }
+}
+.section {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.section-primary {
+  background-color: var(--color-primary);
+}
+
+.section-pink {
+  background-color: var(--color-pink);
+}
+
+body {
+  font-family: var(--font-sans-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cursive);
+}
+
+a {
+  font-weight: var(--font-bold);
+  text-decoration: none;
+  font-family: var(--font-sans-serif);
+}
+
+a:hover {
+  color: var(--color-pink-light);
+}
+
+label {
+  font-size: var(--space-4);
+  font-family: var(--font-sans-serif);
+}
+
+.phone {
+  color: var(--color-white);
+}
+
+.italic {
+  font-weight: var(--font-italic);
+}
+
+.text-xlarge {
+  font-family: var(--font-sans-serif);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.animation:hover {
+  animation: anim1 7s linear;
+  transition-duration: 5000ms;
+}
+
+.animation-title {
+  animation-duration: 5s;
+  animation-name: anim2;
+}
+
+@keyframes anim1 {
+  0% {
+    transform: scale(1.1);
+    background-color: var(--color-pink-light);
+  }
+  50% {
+    transform: scale(1.15);
+    background-color: var(--color-pink);
+  }
+  75% {
+    transform: scale(1.1);
+    background-color: var(--color-red);
+  }
+  100% {
+    transform: scale(1);
+    background-color: var(--color-yellow);
+    transition-duration: 300ms;
+  }
+}
+@keyframes anim2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    transform: scale(1.15);
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*sert uniquement a enlever le zoom de l'anim/ remove scale from anim*/
+@media screen and (max-width: 420px) {
+  @keyframes anim1 {
+    0% {
+      background-color: var(--color-pink-light);
+    }
+    50% {
+      background-color: var(--color-pink);
+    }
+    75% {
+      background-color: var(--color-red);
+    }
+    100% {
+      background-color: var(--color-yellow);
+      transition-duration: 100ms;
+    }
+  }
+}
+.row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding: 1rem;
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col-1 {
+  flex-basis: 8.3333333%;
+  max-width: 8.3333333%;
+}
+
+.col-2 {
+  flex-basis: 16.6666666%;
+  max-width: 16.6666666%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex-basis: 33.3333333%;
+  max-width: 33.3333333%;
+}
+
+.col-5 {
+  flex-basis: 41.6666666%;
+  max-width: 41.6666666%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex-basis: 58.3333333%;
+  max-width: 58.3333333%;
+}
+
+.col-8 {
+  flex-basis: 66.6666666%;
+  max-width: 66.6666666%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex-basis: 83.3333333%;
+  max-width: 83.3333333%;
+}
+
+.col-11 {
+  flex-basis: 91.6666666%;
+  max-width: 91.6666666%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  .col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+.container {
+  margin: auto;
+  max-width: var(--large);
+  padding-left: var(--space-5);
+}
+
+/*######centrer les boutons##########*/
+.button-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Common button styles */
+.button {
+  display: block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button > span {
+  vertical-align: middle;
+}
+
+.button {
+  padding: 1.5em 3em;
+  border-radius: var(--space-6);
+  background: var(--color-pink-light);
+  color: var(--color-white);
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.button.button-hollow {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background: inherit;
+  border-radius: var(--space-6);
+  z-index: -1;
+  opacity: 0.4;
+  -webkit-transform: scale3d(0.8, 0.5, 1);
+  transform: scale3d(0.8, 0.5, 1);
+}
+
+.button:hover {
+  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  -webkit-animation: anim-moema-1 0.3s forwards;
+  animation: anim-moema-1 0.3s forwards;
+}
+
+.button.button-hollow:hover {
+  color: var(--color-white);
+  background-color: var(--color-pink);
+}
+
+.button:hover::before {
+  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+  animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+@-webkit-keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.card-team {
+  display: flex;
+  background: var(--color-white);
+  border-radius: var(--space-6);
+  overflow: hidden;
+}
+
+.card-team-image {
+  max-height: 230px;
+}
+
+.card-team-content {
+  padding: var(--space-4);
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+  }
+
+  .card-team-image {
+    max-height: 130px;
+  }
+
+  .text-xlarge {
+    text-align: center;
+  }
+
+  .team {
+    padding: 0px;
+  }
+
+  .container {
+    padding: 0px;
+  }
+}
+.reverse-col {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: grid;
+  height: 100%;
+  overflow: auto;
+  list-style: none;
+  will-change: opacity;
+}
+
+ul img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#thumbnails {
+  --columns: 7;
+  --gutter: 20px;
+  --size: calc((100vw - (var(--columns) + 1) * var(--gutter)) / var(--columns));
+  grid: auto-flow var(--size)/repeat(var(--columns), 1fr);
+  gap: var(--gutter);
+  padding: var(--gutter);
+  box-sizing: border-box;
+}
+
+@media (max-width: 420px) {
+  #thumbnails {
+    --columns: 3;
+    --gutter: 15px;
+  }
+}
+#scroller {
+  grid: 100%/auto-flow 100%;
+  scroll-snap-type: x mandatory;
+  padding: 0;
+}
+
+#scroller li {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/*####################################pour les formulaire login et register.php*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  margin-top: var(--space-5);
+}
+
+input {
+  border-radius: var(--space-6);
+  padding: 1em 2em;
+  background-color: var(--color-pink);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-3);
+}
+
+.register {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*##############################pour le formulaire du template contact.php*/
+.contact-mail {
+  border: 1px solid black;
+  background-color: var(--color-pink-light);
+  width: 50%;
+  border-radius: 1em;
+}
+
+.textarea_message {
+  background-color: var(--color-pink);
+  border-radius: 1em;
+}
+
+.form > label {
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+/*##############################pour le select du template takeAway.php*/
+select {
+  border-radius: var(--space-6);
+  padding: 1em 2em;
+  background-color: var(--color-pink);
+  padding-left: var(--space-6);
+}
+
+/*###################################Le responsive des formulaires*/
+@media screen and (max-width: 420px) {
+  /*##############################pour le formulaire du template contact.php*/
+  .contact-mail {
+    width: 95%;
+  }
+}
+/*######################################################*/
+/*RESPONSIVE*/
+/*######################################################*/
+@media screen and (max-width: 420px) {
+  /*##########################################ABOUT.PHP    */
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-title {
+    text-align: center;
+  }
+
+  .container-about {
+    text-align: center;
+  }
+
+  /*##########################################CARD.PHP    */
+  .flex-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    padding-left: 0px;
+  }
+
+  .animation {
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+  }
+
+  /*##########################################CONTACT/ACCES.PHP    */
+  .map-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map {
+    width: 95%;
+    height: 400px;
+    margin-bottom: var(--space-5);
+  }
+
+  .contact {
+    width: 95%;
+  }
+
+  /*#############################################################takeAway.php*/
+  .food-product, .drink-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .label {
+    padding-bottom: var(--space-4);
+  }
+
+  .formspree {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
