@@ -1,0 +1,12 @@
+.section{
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+}
+
+.section-primary{
+    background-color: var(--color-primary);
+}
+
+.section-pink{
+    background-color: var(--color-pink);
+}

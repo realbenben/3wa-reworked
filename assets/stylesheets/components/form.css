@@ -1,0 +1,80 @@
+/*####################################pour les formulaire login et register.php*/
+
+.form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+
+}
+
+form{
+    margin-top:var(--space-5);
+
+    
+}
+
+input{
+    border-radius: var(--space-6);
+    padding: 1em 2em;
+    background-color:var(--color-pink);
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:var(--space-3);
+}
+
+.register{
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+/*##############################pour le formulaire du template contact.php*/
+
+.contact-mail{
+    border:1px solid black;
+    background-color:var(--color-pink-light);
+    width:50%;
+    border-radius: 1em;
+}
+
+.textarea_message{
+    background-color:var(--color-pink);
+    border-radius:1em;
+
+}
+
+.form>label{
+    padding-bottom:3px;
+    padding-top:3px;
+}
+
+
+/*##############################pour le select du template takeAway.php*/
+select{
+    border-radius: var(--space-6);
+    padding: 1em 2em;
+    background-color:var(--color-pink);
+    padding-left:var(--space-6);
+}
+
+
+/*###################################Le responsive des formulaires*/
+
+@media  screen and (max-width: 420px)
+{
+    
+/*##############################pour le formulaire du template contact.php*/
+    .contact-mail{
+    width:95%;
+
+    }
+    
+}

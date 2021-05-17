@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <?php include("./components/head.php"); ?>
+    <title>login</title>
+</head>
+<body>
+<div>
+    <?php include("./components/header.php"); ?>
+</div>
+<main>
+
+    <div class="container form">
+        <h1>Connectez vous avant de passer commande</h2>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" class="form-control">
+                    <?php if(isset($mailerror) && !empty($mailerror)) :?>
+                        <span><?= $mailerror ?></span>
+                    <?php endif ?>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input id="password" name="password" type="password" class="form-control">
+                    <?php if(isset($pwderror) && !empty($pwderror)) :?>
+                        <span><?= $pwderror ?></span>
+                    <?php endif ?>
+                </div>
+                <div class="button-center">
+                    <button type="submit" class="button">Se connecter</button>
+                </div>
+    </div>
+    <div class="register section">
+        <h3 class="text-xlarge">Premiere commande chez  <span class="text-primary">  Pizza Mamma</span> ? Inscrivez vous !!!</h3>
+        <a class ="href col-6 button" href="register.phtml">creer un compte</a>
+    </div>
+    </form>
+</main>
+<div class="section section-pink">
+    <div class="container">
+        <h2 class="text-xlarge">Rencontrez la team</h2>
+        <?php include("./components/team.php"); ?>
+    </div>
+</div>
+<?php include("./components/footer.php"); ?>
+
+</body>
+</html>

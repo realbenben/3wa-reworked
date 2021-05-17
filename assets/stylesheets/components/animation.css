@@ -1,0 +1,76 @@
+.animation:hover{
+    animation: anim1  7s linear;
+    transition-duration: 5000ms;
+}
+
+.animation-title{
+      animation-duration: 5s;
+      animation-name: anim2;
+
+}
+
+@keyframes anim1{
+      0% {
+      transform: scale(1.1);
+      background-color:var(--color-pink-light) ;
+     
+  }
+      50% {
+          transform: scale(1.15) ;
+          background-color:var(--color-pink);
+  }
+
+      75%   {
+          transform: scale(1.10);
+          background-color: var(--color-red);
+         
+  }
+      100%{
+        transform: scale(1.00);
+          background-color:var(--color-yellow);
+          transition-duration: 300ms;
+      }
+}
+
+@keyframes anim2{
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    transform: scale(1.15); 
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*sert uniquement a enlever le zoom de l'anim/ remove scale from anim*/
+
+@media  screen and (max-width: 420px)
+{
+
+  @keyframes anim1{
+      0% {
+          background-color:var(--color-pink-light);
+     
+  }
+      50% {
+          background-color:var(--color-pink);
+  }
+
+      75%   {
+          background-color: var(--color-red);
+         
+  }
+      100%{
+          background-color:var(--color-yellow);
+          transition-duration: 100ms;
+      }
+}
+
+  
+}
+
+
+

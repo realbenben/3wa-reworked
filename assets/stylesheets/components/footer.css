@@ -1,0 +1,15 @@
+.footer{
+    padding:var(--space-6);
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+
+@media  screen and (max-width: 420px)
+{
+.footer{
+    text-align: center;
+
+}
+
+}

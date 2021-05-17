@@ -1,0 +1,113 @@
+/*ICI SE TROUVE LE CSS DE MISE EN PLACE DES PAGES /HERE FIND THE LAYOUT DISPLAY */
+
+/*############################################about.php*/
+.article{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;    
+}
+
+
+
+
+/*#################################card.php*/
+
+.flex-card{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    
+}
+
+.food ,.drink{
+    text-align: center;
+
+}
+
+.carte{
+    margin-top:-6%;
+}
+.animation-title{
+text-align: center;
+}
+
+li{
+    list-style:none;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+/*#############################Contact*/
+.map{
+    height:400px;
+    width:400px;
+    
+}
+.map-contact{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+
+.contact{
+    
+    border:2px solid black;
+    background-color:var(--color-yellow-strong);
+    width:50%;
+    border-radius: 1em;
+    width:50%;
+    height:auto;
+    text-align: center;
+    
+}
+
+.contact>h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+
+.title{
+    padding:30px 0px 30px 0px;
+}
+
+
+/*#############################################################takeAway.php*/
+.food-product , .drink-product{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:baseline;  
+}
+
+
+.label{
+    padding-right:var(--space-4);
+}
+/*###########################*/
+.main-content{
+    text-align: center;
+  
+}
+
+.formspree{
+     width:70%;
+     height:auto;
+}
+
+
+/*couleur des pages/img #######################################################*/
+body{
+
+    background-color:#fff5c0;
+}
+
+
+img{
+    max-width:100%
+}
+

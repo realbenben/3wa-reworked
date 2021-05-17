@@ -1,0 +1,88 @@
+/*######################################################*/
+                                                        
+                    /*RESPONSIVE*/
+
+/*######################################################*/
+
+@media  screen and (max-width: 420px)
+{
+
+/*##########################################ABOUT.PHP    */
+    
+    
+    .article{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    }
+    
+    .about-title{
+        text-align: center;
+    }
+    .container-about{
+        text-align: center;
+
+    }
+/*##########################################CARD.PHP    */
+
+    .flex-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    }
+    
+
+    .menu{
+        padding-left:0px;
+    }
+
+    .animation{
+        padding-top:var(--space-4);
+        padding-bottom:var(--space-4);
+    }
+
+
+/*##########################################CONTACT/ACCES.PHP    */
+
+    
+    .map-contact{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        
+    }
+    
+    .map{
+        width:95%;
+        height:400px;
+        margin-bottom:var(--space-5);
+    }
+    
+    .contact{
+        width:95%;
+    }
+
+
+
+/*#############################################################takeAway.php*/
+    
+    .food-product , .drink-product{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    
+
+
+    .label{
+        padding-bottom:var(--space-4);
+    }
+    
+    .formspree{
+     width:90%;
+     height:auto;
+}
+}

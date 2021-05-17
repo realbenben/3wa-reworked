@@ -1,0 +1,52 @@
+body{
+    font-family:var(--font-sans-serif);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--font-cursive);
+    
+}
+
+a{
+    font-weight: var(--font-bold);
+    text-decoration:none;
+    font-family:var(--font-sans-serif);
+}
+
+a:hover{
+    color: var(--color-pink-light);
+}
+
+label{
+    font-size:var(--space-4);
+    font-family:var(--font-sans-serif) ;
+}
+
+.phone{
+    color:var(--color-white);
+}
+
+.italic{
+    font-weight: var(--font-italic);
+
+}
+
+.text-xlarge{
+    font-family:var(--font-sans-serif)
+}
+
+.text-center{
+    text-align: center;    
+}
+
+.text-left{
+        text-align: left;   
+}
+
+.text-right{
+        text-align: right;   
+}
+
+.text-primary{
+    color:var(--color-primary);
+}

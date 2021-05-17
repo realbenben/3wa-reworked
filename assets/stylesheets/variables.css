@@ -1,0 +1,38 @@
+:root {
+    /*colors*/
+    --color-yellow: #fff5c0;
+    --color-yellow-strong: #ffee93;
+    --color-pink: #ff8585;
+    --color-pink-light: #ffb396;
+    --color-red:#ff4646;
+    --color-primary:#ff4646;
+    --color-black:#222831;
+    --color-white:#fafafa;
+    /*spacing*/
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 16px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --space-7: 128px;
+  
+  /* Breakpoints */
+  --xlarge: 1680px;
+  --large: 1280px;
+  --medium: 980px;
+  --small: 740px;
+  --xsmall: 480px;
+  
+  /* Fonts */
+  
+  --font-cursive: 'Italianno', cursive;
+  --font-sans-serif: 'Montserrat', sans-serif;
+  --font-serif: Georgia, Times, serif;
+  --font-mono: Menlo, Courier, monospace;
+  --font-italic: 100;
+  --font-normal: 500;
+  --font-bold: 700;
+  --font-heavy: 900;
+}
+

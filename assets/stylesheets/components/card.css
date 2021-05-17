@@ -1,0 +1,42 @@
+.card-team{
+    display: flex;   
+    background: var(--color-white);
+    border-radius: var(--space-6);    
+    overflow: hidden;
+}
+
+.card-team-image{
+    max-height: 230px;
+}
+
+.card-team-content{
+    padding:var(--space-4);    
+}
+
+@media  screen and (max-width: 420px)
+{
+    .card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width:auto;
+    
+
+}
+.card-team-image{
+    max-height: 130px;
+}
+
+.text-xlarge{
+    text-align: center;
+}
+
+.team{
+    padding:0px;
+}
+
+.container{
+    padding:0px;
+}
+}
