@@ -11,7 +11,7 @@
     <div class="map-contact">
         <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=132QM7sT7xyebBz9Wpwo27hf6d3o9Espt" width="640" height="480"></iframe>
 
-        <div class="contact">
+        <section class="contact">
             <h2>Adresse</h2>
             <adress class="adress">71 rue de Béthune<br>59100 Lille</adress>
             <h2>Métro</h2>
@@ -24,16 +24,16 @@
             <p>Terrasse, Wifi, Pizza à emporter, Restaurant sur place ou à emporter , Privatisation possible</p>
             <h2>Moyens de paiement</h2>
             <p>Carte Bleue, Chèques, Chèques Vacances, Espèces, Eurocard/Mastercard, Titres restaurant, Visa</p>
-        </div>
+        </section>
     </div>
-    <div class="title">
+    <section class="title">
         <h1 class="text-xlarge text-center">Vous désirez nous<span class="text-primary"> contacter ?</span> Remplissez le formulaire ci dessous</h1>
-    </div>
+    </section>
     <div class="form-group">
         <form class="contact-mail form-group" action="https://formspree.io/mdowjnre" method="POST">
             <div class="form-group form">
-                <label for="name_field">Votre nom</label>
-                <input type="text"  name="name_field">
+                <label for="name_field" id="name_field" name="name">Votre nom</label>
+                <input type="text" class="name_field" name="name_field">
             </div>
             <div class="form-group form">
                 <label for="_replyto">Votre email</label>

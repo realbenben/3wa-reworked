@@ -14,7 +14,7 @@
         <li class="navbar-label">
             <a class="navbar-link" href="<?= $link['href'] ?>">
                 <i class="fas <?= $link['icon'] ?>"></i>
-                <div><?= $link['title'] ?></div>
+                <?= $link['title'] ?>
             </a>
         </li>
         <?php
