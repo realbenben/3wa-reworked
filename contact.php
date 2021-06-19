@@ -33,15 +33,15 @@
         <form class="contact-mail form-group" action="https://formspree.io/mdowjnre" method="POST">
             <div class="form-group form">
                 <label for="name_field" id="name_field" name="name">Votre nom</label>
-                <input type="text" class="name_field" name="name_field">
+                <input type="text" id="name_field" name="name_field">
             </div>
             <div class="form-group form">
                 <label for="_replyto">Votre email</label>
-                <input type="email" class="_replyto" name="_replyto" >
+                <input type="email" id="_replyto" name="_replyto" >
             </div>
             <div class="form-group form">
                 <label  for="textarea_message">Votre message ou demande de réservation</label>
-                <textarea class="textarea_message" name="textarea_message"></textarea>
+                <textarea id="textarea_message" name="textarea_message"></textarea>
             </div>
             <div class="form-group ">
                 <button type="submit" class="button button-hollow">envoyer votre message </button>

@@ -23,7 +23,7 @@ if(!$message) {
         <form action="assets/php/takeAway.php" method="post" name="takeaway">
             <div class="food-product section text-center">
                 <label class="text-xlarge label" for="food" id="pizzas" name="pizzas" >Nos pizzas <span class="text-primary">disponibles</span></label>
-                <select name="foods" id="foods">
+                <select name="foods" id="food">
                     <optgroup  label="Pizzas">
                         <option value="default"></option>
                         <?php foreach ($pizzas as $pizza): ?>
@@ -34,7 +34,7 @@ if(!$message) {
             </div>
             <div class="drink-product section text-center">
                 <label class="text-xlarge label" for="drink" id="drinks" name="drinks">Nos boissons <span class="text-primary">disponibles</span></label>
-                <select name="drinks" id="drinks">
+                <select name="drinks" id="drink">
                     <optgroup label="drinks">
                         <option value="default"></option>
                         <?php foreach ($drinks as $drink): ?>

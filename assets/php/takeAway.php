@@ -74,24 +74,6 @@ if (!empty($_POST['customer_id']) && !empty($_POST['foods']) && !empty($_POST['d
 
     }
 
-    // on modifie la commande
-    if($orderId) {
-        $productSQL = 'UPDATE INTO products_orders (product_id,order_id) VALUES (%s,%s)';
-
-        $foodProductSQL = \sprintf($productSQL, $foodId, $orderId);
-        $drinkProductSQL = \sprintf($productSQL, $drinkId, $orderId);
-
-        try {
-            $db->exec($foodProductSQL);
-            $db->exec($drinkProductSQL);
-            $message = 'Votre commande a été modifié.';
-        } catch (\Exception $e) {
-            $db->exec(\sprintf('DELETE FROM orders WHERE order = %s', $uniqId));
-
-            $message = 'Probleme lors de la modification de votre commande' ;
-        }
-
-    }
 }
 
 ?>
