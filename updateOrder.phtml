@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <?php include("./components/head.php"); ?>
+    <title>take away</title>
+</head>
+<body>
+<?php include("./components/header.php"); ?>
+<?php require './assets/php/takeAway.php'; ?>
+
+<?php
+//affichage d'un message en cas de réussité ou d'echec du passage de commande
+if(!$message) {
+    ?>
+    <div class="message"><?= $message ?></div>
+<?php
+}
+?>
+
+<div class="section text-center">
+    <h1 class="text-xlarge text-center">Pizza et boisson <span class="text-primary">à emporter</span></h1>
+    <div class="form-group text-center">
+        <form action="assets/php/takeAway.php" method="post" name="takeaway">
+            <div class="food-product section text-center">
+                <label class="text-xlarge label" for="food" id="pizzas" name="pizzas" >Nos pizzas <span class="text-primary">disponibles</span></label>
+                <select name="foods" id="food">
+                    <optgroup  label="Pizzas">
+                        <option value="default"></option>
+                        <?php foreach ($pizzas as $pizza): ?>
+                            <option value="<?= $pizza['id'] ?>"><?= $pizza['name'] ?> <?= $pizza['price'] ?> €</option>
+                        <?php endforeach ?>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="drink-product section text-center">
+                <label class="text-xlarge label" for="drink" id="drinks" name="drinks">Nos boissons <span class="text-primary">disponibles</span></label>
+                <select name="drinks" id="drink">
+                    <optgroup label="drinks">
+                        <option value="default"></option>
+                        <?php foreach ($drinks as $drink): ?>
+                            <option value="<?= $drink['id'] ?>"><?= $drink['name'] ?> <?= $drink['price'] ?> €</option>
+                        <?php endforeach ?>
+                    </optgroup>
+                </select>
+            </div>
+            <input type="hidden" name="customer_id" value="1">
+            <input type="submit" value="Commander"/>
+        </form>
+        <a href="updateOrder.phtml" class="text-xlarge text-center">Vous souhaitez modifier votre commande ?<span class="text-primary"> Cliquez ici !</span></a>
+    </div>
+    <?php include("./components/formspree.php"); ?>
+</div>
+<div class="section section-pink">
+    <div class="container">
+        <h2 class="text-xlarge">Rencontrez la team</h2>
+        <?php include("./components/team.php"); ?>
+    </div>
+</div>
+<?php include("./components/footer.php"); ?>
+</body>
+</html>

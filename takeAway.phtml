@@ -2,14 +2,14 @@
 <html lang="fr">
 <head>
     <?php include("./components/head.php"); ?>
-    <title>take away</title>
+    <title>update order</title>
 </head>
 <body>
 <?php include("./components/header.php"); ?>
 <?php require './assets/php/takeAway.php'; ?>
 
 <?php
-//affichage d'un message en cas de réussité ou d'echec du passage de commande
+//affichage d'un message en cas de réussité ou d'echec dde la modification de commande
 if(!$message) {
     ?>
     <div class="message"><?= $message ?></div>
@@ -18,9 +18,9 @@ if(!$message) {
 ?>
 
 <div class="section text-center">
-    <h1 class="text-xlarge text-center">Pizza et boisson <span class="text-primary">à emporter</span></h1>
+    <h1 class="text-xlarge text-center">Modifier votre  <span class="text-primary">commande</span></h1>
     <div class="form-group text-center">
-        <form action="assets/php/takeAway.php" method="post" name="takeaway">
+        <form action="assets/php/updateOrder.php" method="post" name="updateOrder">
             <div class="food-product section text-center">
                 <label class="text-xlarge label" for="food" id="pizzas" name="pizzas" >Nos pizzas <span class="text-primary">disponibles</span></label>
                 <select name="foods" id="food">
@@ -43,8 +43,8 @@ if(!$message) {
                     </optgroup>
                 </select>
             </div>
-            <input type="hidden" name="customer_id" value="1">
-            <input type="submit" value="Commander"/>
+            <input type="hidden" name="order_id" value="1">
+            <input type="submit" value="modifier la commande"/>
         </form>
     </div>
     <?php include("./components/formspree.php"); ?>
