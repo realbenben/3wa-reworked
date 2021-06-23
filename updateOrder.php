@@ -27,11 +27,12 @@ $drinks = $sql->fetchAll();
 
 // ensuite on modifie la commande
 
-$productSQL = 'UPDATE products_orders (product_id,order_id) VALUES (%s,%s)';
+$productSQL =$db->prepare( 'UPDATE product_id,
+              FROM product_orders
+              SET product_id = products.id
+              WHERE type ="pizza"
+              ')
 
-    $uniqId = uniqid('order_', true);
-    $orderSQL = \sprintf('UPDATE orders  date,total_price) VALUES (%s,%d)',
-        new \DateTime(),
-        $uniqId,
-   );
- ?>
+
+
+
