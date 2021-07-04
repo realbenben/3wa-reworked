@@ -27,11 +27,17 @@ $drinks = $sql->fetchAll();
 
 // ensuite on modifie la commande
 
-$productSQL =$db->prepare( 'UPDATE product_id,
+$update_foodSQL =$db->prepare( 'UPDATE product_id,
               FROM product_orders
               SET product_id = products.id
               WHERE type ="pizza"
-              ')
+              ');
+
+$update_drinkSQL =$db->prepare( 'UPDATE product_id,
+              FROM product_orders
+              SET product_id = products.id
+              WHERE type ="boisson"
+              ');
 
 
 
