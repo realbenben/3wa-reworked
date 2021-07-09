@@ -27,17 +27,15 @@ $drinks = $sql->fetchAll();
 
 // ensuite on modifie la commande
 
-$update_foodSQL =$db->prepare( 'UPDATE product_id,
-              FROM product_orders
-              SET product_id = products.id
-              WHERE type ="pizza"
-              ');
+sprintf("UPDATE product_orders
+         SET product_id = %s
+         where type='pizza', $newPizzaId
+         ");
 
-$update_drinkSQL =$db->prepare( 'UPDATE product_id,
-              FROM product_orders
-              SET product_id = products.id
-              WHERE type ="boisson"
-              ');
+sprintf("UPDATE product_orders
+        SET product_id = %s
+        where type='boisson', $newBoissonId
+      ");
 
 
 
